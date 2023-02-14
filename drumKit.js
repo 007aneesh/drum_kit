@@ -51,6 +51,14 @@ function sound(key) {
       var sound7 = new Audio("sounds_tom-4.mp3");
       sound7.play();
       break;
+    case "f":
+      var sound8 = new Audio("src_audio_clap.wav");
+      sound8.play();
+      break;
+    case "g":
+      var sound9 = new Audio("src_audio_tink.wav");
+      sound9.play();
+      break;
 
     default:
       console.log(key);

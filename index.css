@@ -1,34 +1,90 @@
 body {
   text-align: center;
+  background: black;
+  align-content: center;
+  align-items: center;
+}
+html {
+  font-family: sans-serif;
 }
 h1 {
-  font-size: 5rem;
-  color: black;
-  font-family: cursive;
-  text-shadow: 3px 0 #da0463;
+  width: 100%;
+  font-size: 3rem;
+  color: #51aaff;
+  font-family: "Unica One", sans-serif;
+  letter-spacing: 4px;
 }
 .all {
-  margin: 10% auto;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
+
 .animation {
   box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
 }
 .button {
   outline: none;
-  border: 10px solid #404b69;
+  border: 3px solid #51aaff;
   font-size: 5rem;
   font-family: "Arvo", cursive;
-  line-height: 1;
   font-weight: 900;
   color: #da0463;
   text-shadow: 3px 0 #dbedf3;
   border-radius: 15px;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
+  display: flex;
+  flex-direction: row;
+  width: 6rem;
+  height: 6rem;
   text-align: center;
-  margin: 10px;
-  background-color: white;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  background-color: transparent;
   cursor: pointer;
+}
+footer {
+  color: white;
+  bottom: 0;
+  font-size: 0.8rem;
+  left: 0;
+  letter-spacing: 2px;
+  padding: 14px 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: #51aaff;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  .button {
+    margin: 15px;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+  .row {
+    margin: -10px;
+  }
 }
